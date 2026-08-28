@@ -1,0 +1,111 @@
+@charset "utf-8";
+
+/* 공통css */
+.container {
+    width: 1140px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aqua;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* 헤더 */
+header {
+    width: 100%;
+    height: 245px;
+    background-color: gold;
+}
+
+#header_top {
+    height: 35px;
+    background-color: #237af6;
+}
+
+#header_top .container {
+    justify-content: flex-end;
+}
+
+#header_top ul {
+    width: 70%;
+    height: 25px;
+    background-color: tomato;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header_main {
+    height: 160px;
+}
+
+#header_main .logo {
+    width: 225px;
+    height: 115px;
+    background-color: brown;
+}
+
+#header_main #search {
+    width: 620px;
+    height: 60px;
+    background-color: peru;
+}
+
+#header_main .info {
+    width: 260px;
+    height: 100px;
+    background-color: blueviolet;
+}
+
+#header_botton {
+    height: 50px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+
+#header_botton nav {
+    width: 800px;
+    height: 50px;
+    background-color: chartreuse;
+}
+
+#header_botton .realtime {
+    width: 190px;
+    height: 50px;
+    background-color: chartreuse;
+}
+
+
+
+/* 푸터 */
+footer {
+    width: 1513px;
+    height: 170px;
+    margin: 0 auto;
+    background-color: #bdb3b3;
+}
+
+footer p{font-family: '돋움'; font-size: 12px; color: ;}
