@@ -23,18 +23,102 @@
     height: 420px;
 }
 
+#new
+{
+    width: 100%;
+    height: 390px;
+    background-color: #eee;
+}
+#new .container {
+    flex-wrap: wrap;
+    
+}
+
+#new h2{
+    width: 15%;
+}
+
+#new li {
+    float: left;
+    padding: 0 10px;
+}
+
+#new a {
+    width: 15%;
+    text-align: right;
+}
+
+#new .books {
+    width: 100%;
+    height: 90%;
+    background-color: tomato;
+    position: relative;
+    
+}
+
+#new .books> div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#new .books> div:not(:first-child) {display: none;}
+
+#new .book {
+    width: calc(93% / 7);
+}
+#new .book img{width: 100%;}
+
+#new .book p:nth-of-type(1){
+    text-decoration: line-through;
+}
+
+#new .book p:nth-of-type(2){
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+
+#price{
+    width: 100%;
+    height: 950px;
+    background-color: antiquewhite;
+}
+
+#price .container{
+    flex-wrap: wrap;
+}
+
+#price h2{
+    
+}
+    
+
+
+
+
+
 /* 섹션 */
 section {
     width: 1100px;
     height: 280px;
     margin: 0 auto;
     background-color: pink;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-evenly;
 }
 
 .content {
     width: 340px;
-    height: 145px;
-    float: left;
-    margin: 65px 13px;
+    height: 100px;
+    /* float: left;
+    margin: 65px 13px; */
     background-color: olive;
 }

@@ -100,12 +100,14 @@ header {
 
 
 
-/* 푸터 */
-footer {
-    width: 1513px;
-    height: 170px;
-    margin: 0 auto;
-    background-color: #bdb3b3;
-}
 
-footer p{font-family: '돋움'; font-size: 12px; color: ;}
+/* 푸터 */
+footer {width: 100%; height: 145px; border-top: 1px solid #666; margin: 0 auto;}
+footer > #box {width: 1240px; height: 130px; margin: 10px auto;}
+footer > #box > ul {width: 750px; height: 50px; float: left; margin: 20px 0 0 40px; color: #666;}
+footer > #box > ul > li {float: left; font-size: 12px; margin: 5px 10px;}
+footer > #box > ul > li a {text-decoration: none; color: #666;}
+footer > #box > p {float: left; width: 700px; height: 50px; line-height: 150%; margin: 10px 0 0 40px; font-size: 12px; color: #666;}
+    
+
+
