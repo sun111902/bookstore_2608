@@ -75,10 +75,11 @@
 
 #new .book p:nth-of-type(1){
     text-decoration: line-through;
+    font-size: 15px;
 }
 
 #new .book p:nth-of-type(2){
-    font-size: 20px;
+    font-size: 15px;
     font-weight: bold;
 }
 
@@ -91,11 +92,97 @@
 }
 
 #price .container{
+    text-align: center;
+    text-align: justify;
+   
+
+
+
+}
+
+#price .corner{
+    width: 65%;
+    height: 100%;
+    display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    align-content:space-evenly; 
+    text-align: center;
+    text-align: justify;
+
+    
+}
+
+#price .certify{
+    width: 35%;
+    height: 100%;
 }
 
 #price h2{
+    width: 20%;  
+
     
+}
+
+#price li{
+    float: left;
+    padding: 0 10px;
+    
+
+}
+
+#price a {
+    width: 20%;
+    text-align: right;
+
+}
+
+#price .books{
+    width: 100%;
+    height: 90%;
+    background-color: greenyellow;
+    position: relative;
+      
+    
+
+    
+}
+
+#price .books> div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#price .books> div:not(:first-child) {display: none;}
+
+#price .book {
+    width: 21%;
+    height: 90px;
+    background-color: pink;
+    font-size: 10px;
+}
+#price .book img{width: 100%;
+                 height: auto;
+                 object-fit: cover;
+}
+
+#price .book p:nth-of-type(1){
+    text-decoration: line-through;
+    font-size: 10px;
+   
+}
+
+#price .book p:nth-of-type(2){
+    font-size: 10px;
+    font-weight: bold;
+    
+  
 }
     
 

@@ -16,6 +16,7 @@ async function fetchBooks(query) {
     const REST_API_KEY = "354a663e6079cbd2ca6b0101277b3592"
     const params = new URLSearchParams({
         query,
+        size: 20
     });
     const url = `https://dapi.kakao.com/v3/search/book?${params}`;
 
@@ -42,6 +43,12 @@ async function bookData() {
             { query: "원피스", sectionId: "cartoon" },
             { query: "종교", sectionId: "religion" },
             { query: "불교", sectionId: "oldbook" },
+            { query: "요리", sectionId: "price1" },
+            { query: "인문", sectionId: "price2" },
+            { query: "예술", sectionId: "price3" },
+            { query: "여행", sectionId: "price4" },
+            { query: "경제", sectionId: "price5" },
+
         ];
 
         for (const { query, sectionId } of queries) {
