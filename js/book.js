@@ -1,11 +1,24 @@
 // new section tabmenu
-const tabItems = document.querySelectorAll('#booktab li');
-const tabs = document.querySelectorAll('.books > div');
+const tabItems = document.querySelectorAll('#new #booktab li');
+const tabs = document.querySelectorAll('#new .books > div');
 
 tabItems.forEach((tab, i) => {
     tab.addEventListener('click', () => {
         // 탭에 해당하는 리스트 보이고, 나머지는 숨기기
         tabs.forEach((tab, j) => {
+            tab.style.display = (i === j) ? 'flex' : 'none';
+        });
+    });
+});
+
+// price section tabmenu
+const pricetabItems = document.querySelectorAll('#price #booktab li');
+const pricetabs = document.querySelectorAll('#price .books > div');
+
+pricetabItems.forEach((tab, i) => {
+    tab.addEventListener('click', () => {
+        // 탭에 해당하는 리스트 보이고, 나머지는 숨기기
+        pricetabs.forEach((tab, j) => {
             tab.style.display = (i === j) ? 'flex' : 'none';
         });
     });
@@ -49,6 +62,12 @@ async function bookData() {
             { query: "여행", sectionId: "price4" },
             { query: "경제", sectionId: "price5" },
 
+            { query: "서울", sectionId: "bookstore1" },
+            { query: "수원", sectionId: "bookstore2" },
+
+
+
+
         ];
 
         for (const { query, sectionId } of queries) {
@@ -65,8 +84,7 @@ console.log(data)
                 // 요소 생성 및 추가
                 box.innerHTML = `<img src="${doc.thumbnail}">
                         <h3>${doc.title}</h3>
-                        <p>${doc.price}</p>
-                        <p>${doc.sale_price.toLocaleString()}원</p>
+                        <p><span>${doc.price}</span><span>${doc.sale_price.toLocaleString()}원</span></p>
                         `
             });
         }
