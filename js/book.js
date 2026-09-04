@@ -62,8 +62,8 @@ async function bookData() {
             { query: "여행", sectionId: "price4" },
             { query: "경제", sectionId: "price5" },
 
-            { query: "서울", sectionId: "bookstore1" },
-            { query: "수원", sectionId: "bookstore2" },
+            { query: "서울", sectionId: "bookshop1" },
+            { query: "수원", sectionId: "bookshop2" },
 
 
 
