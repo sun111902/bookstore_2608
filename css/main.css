@@ -26,7 +26,7 @@
 #new
 {
     width: 100%;
-    height: 390px;
+    height: 400px;
     background-color: #eee;
 }
 #new .container {
@@ -36,6 +36,8 @@
 
 #new h2{
     width: 15%;
+    text-align: center;
+    margin: 20px;
 }
 
 #new li {
@@ -51,7 +53,7 @@
 #new .books {
     width: 100%;
     height: 90%;
-    background-color: tomato;
+    background-color: white;
     position: relative;
     
 }
@@ -64,12 +66,13 @@
     left: 0;
     display: flex;
     justify-content: space-between;
+    padding: 10px;
 }
 
 #new .books> div:not(:first-child) {display: none;}
 
 #new .book {
-    width: calc(93% / 7);
+    width: calc(93% / 8);
 }
 #new .book img{width: 100%;}
 
@@ -81,11 +84,11 @@
 
 #new .book span:nth-of-type(1){
     text-decoration: line-through;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 #new .book span:nth-of-type(2){
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
 }
 
@@ -145,8 +148,8 @@
 
 #price .books{
     width: 100%;
-    height: 90%;
-    background-color: greenyellow;
+    height: 81%;
+    background-color: beige;
     position: relative;
       
     
@@ -173,14 +176,14 @@
     background-color: pink;
     font-size: 10px;
 }
-#price .book img{width: 100%;
+#price .book img{width: 90%;
                  height: auto;
                  object-fit: cover;
 }
 
 #price .book p:nth-of-type(1){
     text-decoration: line-through;
-    font-size: 10px;
+    font-size: 12px;
    
 }
 
@@ -192,69 +195,89 @@
 }
 
 
-#certify
-{
-    width: 30%;
-    height: 100%;
-    background-color: #eee;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+
+ .store-list{
+   display: flex;
+   flex-direction: column;
+   background-color: white;
+   height: 850px;
+   width: 350px;
+   padding: 17px 0px;
+}
+.store-item{
+   display: flex;
+   align-items: flex-start;
+   gap: 20px;
+   padding: 45px 6px;
+   border-bottom: 1px solid var(--color-border-light);
+   cursor: pointer;
+   transition: background var(--transition);
+   border-radius: var(--radius-sm);
+   background-color: white;
+   
+   
 
 }
 
-#certify .tab_menu{
+.store-item:last-child {border-bottom: none; }
+
+.store-item:hover {background: var(--color-primary-sky); }
+
+.store-item__avatar{
+ width: 40px;
+ height: 40px;
+ border-radius: var(--radius-md);
+ background: #dbeafe;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-shrink: 0;
+ font-size: 14px;
+ font-weight: 800;
+ color: var(--color-primary);
+}
+.store-item__info {flex: 1; min-width: 0; }
+
+
+.store-item__name{
+ font-size: 12px;
+ font-weight: 700;
+ color: var(--color-primary);
+ margin-bottom: 2px;
+ 
 }
 
-
-#certify h2{
-    width: 30%;
+.store-item__count{
+ font-size: 12px;
+ color: var(--color-text-muted);
+ margin-bottom: 2px;
 }
 
-#certify li {
-    float: left;
-    padding: 0 10px;
+.store-item__desc{
+
+ font-size: 14px;
+ color: #aaa;
+ white-space: nowrap;
+ overflow: hidden;
+ text-overflow: ellipsis;
 }
 
-#certify a {
-    width: 15%;
-    text-align: right;
+.store-dots{
+ display: flex;
+ justify-content: center;
+ gap: 5px;
+ padding-top: 10px;
 }
 
-#certify .books {
-    width: 100%;
-    height: 90%;
-    background-color: tomato;
-    position: relative;
-    
+.store-dot{
+ width: 6px;
+ height: 6px;
+ border-radius: 50%;
+ background: #ccc;
+ cursor: pointer;
 }
+.store-dot.is-active{background: var(--color-primary); }
 
-#certify .books> div{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-}
-
-#certify .books> div:not(:first-child) {display: none;}
-
-#certify .book {
-    width: calc(93% / 7);
-}
-#certify .book img{width: 100%;}
-
-#certify .book p:nth-of-type(1){
-    text-decoration: line-through;
-    font-size: 15px;
-}
-
-#certify .book p:nth-of-type(2){
-    font-size: 15px;
-    font-weight: bold;
-}
 
 
 
@@ -264,8 +287,8 @@
 section {
     width: 1100px;
     height: 280px;
-    margin: 0 auto;
-    background-color: pink;
+    margin: 0 200px;
+    background-color: white;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

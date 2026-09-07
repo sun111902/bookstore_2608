@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/main.css">
+
+
 </head>
 
 <body>
@@ -33,9 +35,26 @@
         </div>
         <div id="header_main">
             <div class="container">
-                <div class="logo"></div>
-                <div id="search"></div>
+
+                <a href="#" class="logo">
+                    <img src="./img/img.svg" alt="북코아"> 
+                </a>
+
+                <div class="search-bar">
+                    <select class="search-bar__select">
+                        <option>통합검색</option>
+                        <option>도서명</option>
+                        <option>저자명</option>
+                        <option>출판사</option>
+                        <option>ISBN</option>
+                    </select>
+                    <input class="search-bar__input" type="text">
+                    <button class="search-bar__btn" type="button"></button>
+
+                </div>
+
                 <div class="info"></div>
+
             </div>
         </div>
         <div id="header_botton">
@@ -228,70 +247,176 @@
                 </div>
             </div>
 
-            <div id="certify">
-                <h2>인증서점</h2>
-                <ul class="tab_menu">
-                    <li class="active">이주의 서점</li>
-                    <li>신규 서점</li>
-                </ul>
-                <a href="#">더보기</a>
 
 
-                <div class="books">
-                    <div id="bookshop1" class="tabcontent">
-                        <div class="book"></div>
-                        <div class="book"></div>
-                        <div class="book"></div>
-                        <div class="book"></div>
-                        <div class="book"></div>
-                        <div class="book"></div>
+            <div class="card two-col__side">
+                <div class="section-header">
+                    <h2 class="section-title">인증서점</h2>
+                    <div class="flex" style="align-items:center; gap:10px;">
+                        <div class="tab-list">
+                            <button class="tab-btn is-active">아주서점</button>
+                            <button class="tab-btn">신규 서점</button>
+                        </div>
+                        <a href="#" class="link-more">더보기</a>
                     </div>
+                </div>
 
-                    <div id="bookshop2" class="tabcontent">
-                        <div class="book"></div>
-                        <div class="book"></div>
-                        <div class="book"></div>
-                        <div class="book"></div>
-                        <div class="book"></div>
-                        <div class="book"></div>
 
+
+                <div class="store-list">
+                    <div class="store-item">
+                        <div class="store-item__avatar"></div>
+                        <div class="store-item__info">
+                            <div class="store-item__name">우리동네 책방</div>
+                            <div class="store-item__count">판매도서: 158153권</div>
+                            <div class="store-item__desc">항상 우리동네책방을 이용해 주시고 사랑해주셔서 감사드립니다</div>
+                        </div>
                     </div>
+                    <div class="store-item">
+                        <div class="store-item__avatar"></div>
+                        <div class="store-item__info">
+                            <div class="store-item__name">한강 만화뱅크</div>
+                            <div class="store-item__count">판매도서: 40,728권</div>
+                            <div class="store-item__desc">큰책 30권 작은책 40권이상 추가요금 받습니다. 만화책,코믹,</div>
+                        </div>
+                    </div>
+                    <div class="store-item">
+                        <div class="store-item__avatar"></div>
+                        <div class="store-item__info">
+                            <div class="store-item__name">가자북</div>
+                            <div class="store-item__count">판매도서: 113,716권</div>
+                            <div class="store-item__desc">안녕하세요.가자북입니다. 다양한 중고책과 전문서적 판매합니다</div>
+                        </div>
+                    </div>
+                    <div class="store-item">
+                        <div class="store-item__avatar"></div>
+                        <div class="store-item__info">
+                            <div class="store-item__name">도토리북스</div>
+                            <div class="store-item__count">판매도서: 89,390권</div>
+                            <div class="store-item__desc">1호선 안양, 명학역에 근방에 위치한 도토리책방입니다.</div>
+                        </div>
+                    </div>
+                    <div class="store-item">
+                        <div class="store-item__avatar"></div>
+                        <div class="store-item__info">
+                            <div class="store-item__name">보라매 중고서적</div>
+                            <div class="store-item__count">판매도서: 9,615권</div>
+                            <div class="store-item__desc">최대한 저렴한 가격으로 판매하고요 교양 철학 고서 </div>
+                        </div>
+                    </div>
+                    <div class="store-item">
+                        <div class="store-item__avatar"></div>
+                        <div class="store-item__info">
+                            <div class="store-item__name">세이북</div>
+                            <div class="store-item__count">판매도서: 27,194권</div>
+                            <div class="store-item__desc">북씨가 운영하는 세이북은 절판 도서와 희귀본, 인문학 도서</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="store-dots">
+                    <span class="store-dot is-active"></span>
+                    <span class="store-dot"></span>
+                </div>
+            </div><!-- /인증서점 -->
 
-                    <script>
-                        const tabMenu = document.querySelectorAll('.tab_menu li');
-                        const tabcontent = document.querySelectorAll('.tabcontent');
+            <script>
+                const tabMenu = document.querySelectorAll('.tab_menu li');
+                const tabcontent = document.querySelectorAll('.tabcontent');
 
-                        tabMenu.forEach((tm, i) => {
-                            tm.addEventListener('click', () => {
-                                tabMenu.forEach(item => {
-                                    item.classList.remove('active');
-                                });
-
-                                tm.classList.add('active');
-
-                                tabContent.forEach((tc, j) => {
-                                    tc.style.display = (i === j) ? 'flex' : 'none';
-                                });
-                            });
+                tabMenu.forEach((tm, i) => {
+                    tm.addEventListener('click', () => {
+                        tabMenu.forEach(item => {
+                            item.classList.remove('active');
                         });
 
-                    </script>
+                        tm.classList.add('active');
 
-                </div>
-            </div>
+                        tabContent.forEach((tc, j) => {
+                            tc.style.display = (i === j) ? 'flex' : 'none';
+                        });
+                    });
+                });
+
+            </script>
+
         </div>
+    </div>
+    </div>
 
 
     </div>
 
 
+    <section class="latest-posts section-padding">
+        <div class="container board-wrapper">
+            <div class="board-box notice-board">
+                <div class="border-title">
+                    <h3>공지사항</h3>
+                    <a href="#" class="more-btn">더보기</a>
+                </div>
+                <ul class="post-list">
+                    <li><a href="#" class="post-link">[중요 안내] 북코아 사이트 오류 시 캐시 삭제 방법 안내</a>
+                        <span class="date">2025.06.09</span>
+                    </li>
+                    <li><a href="#" class="post-link">북코아 시스템 점검 안내</a>
+                        <span class="date">2025.06.07</span>
+                    </li>
+                    <li><a href="#" class="post-link">편의점 택배 예약 버튼 오류 해결 방법 안내</a>
+                        <span class="date">2025.02.04</span>
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <div class="board-box free-board">
+                <div class="border-title">
+                    <h3>자유게시판</h3>
+                    <a href="#" class="more-btn">더보기</a>
+                </div>
+                <ul class="post-list">
+                    <li><a href="#" class="post-link">[공지] 북코아 VIP 서점 철회 및 수수료 인하 안내</a>
+                        <span class="date">2023.02.14</span>
+                    </li>
+                    <li><a href="#" class="post-link">[상시] 북코아 회원가입 이벤트 ★2,000 포인트 적립★<a>
+                                <span class="date">2023.01.19</span>
+                    </li>
+                    <li><a href="#" class="post-link">[발표] 11월 북코아 리뷰 이벤트★10,000원 지급★</a>
+                        <span class="date">2023.12.01</span>
+                    </li>
+
+                </ul>
+
+
+            </div>
+
+
+
+
+
+    </section>
+
+
     <section>
-        <div class="content"></div>
-        <div class="content"></div>
-        <div class="content"></div>
-        <div class="content"></div>
-        <div class="content"></div>
-        <div class="content"></div>
+
+        <div class="event-banner">
+            <div class="event-banner__logo">
+                <div class="event-banner__logo-text">EA1</div>
+                <div class="event-banner__logo-name">특사모</div>
+                <div class="event-banner__logo-sub">특별한 사람들의 모임</div>
+            </div>
+            <div class="event-banner__body">
+                <div class="event-banner__title"><span>특</span>목고 갈 사람 모여라!</div>
+                <div class="event-banner__desc">★ 소 대한민국 대입을 특목고 대비 커뮤니티</div>
+            </div>
+            <a href="#" class="btn btn--yellow">참여하기 →</a>
+        </div>
+
+
+
+
+
+
     </section>
 
 

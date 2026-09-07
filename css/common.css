@@ -8,7 +8,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: aqua;
+    background-color: white;
 }
 
 .swiper {
@@ -35,43 +35,120 @@
 
 /* 헤더 */
 header {
-    width: 100%;
-    height: 245px;
-    background-color: gold;
+    width: 100%;    
+    background-color: white;
+    font-size: 12px;
+    font-weight: 100px;
+    font-family: NotoSans_CJK-Regular;
+    justify-content: center;
+    text-align: center;
+   
+    
+
+    
+
+    
 }
 
 #header_top {
-    height: 35px;
+    height: 38px;
     background-color: #237af6;
+    justify-content: right;
+    text-align: right;
+    
+    
+    
 }
 
 #header_top .container {
-    justify-content: flex-end;
+    justify-content: right;
+    background-color: #237af2;
+   
+     
+  
+   
 }
 
 #header_top ul {
-    width: 70%;
-    height: 25px;
-    background-color: tomato;
+    width: 65%;
+    height: 38px;
+    background-color: #237af6;    
+    justify-content: space-around;
     display: flex;
-    justify-content: space-between;
+    text-align: right;
+    margin: 0px;
+    padding: 10px;
+    
+
+    
+   
+           
 }
 
 #header_main {
+    width: 1513px;
     height: 160px;
 }
 
 #header_main .logo {
     width: 225px;
     height: 115px;
-    background-color: brown;
+    background-color: white;
+    align-items: center;
+
 }
 
-#header_main #search {
+#header_main .search-bar {
     width: 620px;
     height: 60px;
-    background-color: peru;
+    
 }
+
+#header_main .search-bar__select {
+  border: 1px solid var(--color-border);
+  border-right: none;
+  border-radius: var(--radius-sm) 0 0 var(--radius-sm);
+  padding: 0 20px;
+  font-size: 12px;
+  color: var(--color-text-muted);
+  background: #f8f8f8;
+  cursor: pointer;
+  height: 60px;
+  border: 2px solid #616161;
+}
+
+#header_main .search-bar__input {
+  flex: 1;
+  border: 1px solid var(--color-border);
+  border-right: none;
+  padding: 0 20px;
+  font-size: 13px;
+  color: var(--color-text);
+  height: 60px;
+  width: 440px;
+  border: 2px solid black;
+}
+
+#header_main .search-bar__input:focus {
+  border-color: var(--color-primary);
+  outline: none;
+}
+
+#header_main .search-bar__btn {
+  background: var(--color-primary);
+  color: #fff;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 0 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background var(--transition);
+}
+
+#header_main .search-bar__btn:hover {
+  background: var(--color-primary-dark);
+}
+
+
 
 #header_main .info {
     width: 260px;
@@ -80,12 +157,14 @@ header {
 }
 
 #header_botton {
+    width: 1521px;
     height: 50px;
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
       
-    
 }
+
+
 
 
 #header_botton nav {
@@ -99,6 +178,11 @@ header {
     text-align: center;
     margin: 0px;
     padding: 10px;
+    padding: 0 50px;
+    font-size: 14px;
+    font-weight: bold;
+    
+    
     
       
 }
@@ -107,19 +191,171 @@ header {
 #header_botton .realtime {
     width: 190px;
     height: 50px;
-    background-color: chartreuse;
+    background-color: green;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
 }
 
 
 
 
+
+
+.board-wrapper {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.board-box {
+    flex: 1;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+    border: 1px solid #eee;
+}
+
+.border-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f0f0f0;    
+}
+
+.border-title h3 {
+    font-size: 1.25rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.more-btn {
+    text-decoration: none;
+    font-size: 0.9rem;
+    color: black;
+}
+
+.post list {
+    list-style: none;
+}
+
+.post-list li {
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #f9f9f9
+}
+
+.post-list li:last-child {
+    border-bottom: none;
+}
+
+.post-link {
+    text-decoration: none;
+    color: #444;
+    font-weight: 400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70%;
+    transition: color 0.2s;
+    
+}
+
+.post-link:hover {
+    color: #007bff;
+}
+
+.date {
+    font-size: 0.85rem;
+    color: #999;
+}
+
+
+
+/* 이벤트 베너 */
+
+.event-banner {
+  background: linear-gradient(135deg, #1c1c2e 0%, #2d2d44 100%);
+  border-radius: var(--radius-md);
+  padding: 30px 32px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  color: #fff;
+  overflow: hidden;
+  width: 550px;
+  height: 160px;
+
+}
+
+.event-banner__logo {
+  flex-shrink: 0;
+}
+
+.event-banner__logo-text {
+  font-size: 36px;
+  font-weight: 900;
+  color: var(--color-accent-yellow);
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+.event-banner__logo-name {
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.event-banner__logo-sub {
+  font-size: 10px;
+  color: rgba(255,255,255,.5);
+}
+
+.event-banner__body {
+       flex: 1;
+       height: 100px;
+}    
+
+
+.event-banner__title {
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 4px;
+}
+
+.event-banner__title span {
+  color: var(--color-accent-yellow);
+}
+
+.event-banner__desc {
+  font-size: 12px;
+  color: rgba(255,255,255,.65);
+}
+
+
+
 /* 푸터 */
-footer {width: 100%; height: 145px; border-top: 1px solid #666; margin: 0 auto;}
+footer {width: 100%;
+        height: 170px;
+        border-top: 1px solid #666;
+        margin: 0 auto;
+        background-color: #343a40;
+        color: white;
+       
+    }
 footer > #box {width: 1240px; height: 130px; margin: 10px auto;}
-footer > #box > ul {width: 750px; height: 50px; float: left; margin: 20px 0 0 40px; color: #666;}
+footer > #box > ul {width: 750px; height: 50px; float: left; margin: 20px 0 0 40px; color:white;}
 footer > #box > ul > li {float: left; font-size: 12px; margin: 5px 10px;}
-footer > #box > ul > li a {text-decoration: none; color: #666;}
-footer > #box > p {float: left; width: 700px; height: 50px; line-height: 150%; margin: 10px 0 0 40px; font-size: 12px; color: #666;}
+footer > #box > ul > li a {text-decoration: none; color: white;}
+footer > #box > p {float: left; width: 700px; height: 50px; line-height: 150%; margin: 10px 0 0 40px; font-size: 12px; color: white;}
     
 
 
