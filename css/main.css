@@ -203,6 +203,7 @@
    height: 850px;
    width: 350px;
    padding: 17px 0px;
+  
 }
 .store-item{
    display: flex;
@@ -214,7 +215,6 @@
    transition: background var(--transition);
    border-radius: var(--radius-sm);
    background-color: white;
-   
    
 
 }
@@ -244,6 +244,7 @@
  font-weight: 700;
  color: var(--color-primary);
  margin-bottom: 2px;
+
  
 }
 
