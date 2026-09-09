@@ -99,26 +99,35 @@ header {
 }
 
 #header_main .search-bar {
+    display: flex;
+    align-items: center;
     width: 620px;
     height: 60px;
+    border: 2px solid #007bff;
+    background: white;
+    box-sizing: border-box;
+    overflow: hidden; 
+
     
 }
 
 #header_main .search-bar__select {
   border: 1px solid var(--color-border);
-  border-right: none;
+  border: none;
   border-radius: var(--radius-sm) 0 0 var(--radius-sm);
   padding: 0 20px;
   font-size: 12px;
   color: var(--color-text-muted);
-  background: #f8f8f8;
+  background: white;
   cursor: pointer;
   height: 60px;
-  border: 2px solid #616161;
+  outline: none;
+  
 }
 
 #header_main .search-bar__input {
   flex: 1;
+  border: none;
   border: 1px solid var(--color-border);
   border-right: none;
   padding: 0 20px;
@@ -126,7 +135,8 @@ header {
   color: var(--color-text);
   height: 60px;
   width: 440px;
-  border: 2px solid black;
+  outline: none;
+  
 }
 
 #header_main .search-bar__input:focus {
@@ -142,6 +152,14 @@ header {
   font-size: 16px;
   cursor: pointer;
   transition: background var(--transition);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#header_main .search-bar__btn i {
+    font-size: 15px;
+    color:#007bff;
 }
 
 #header_main .search-bar__btn:hover {
@@ -151,9 +169,49 @@ header {
 
 
 #header_main .info {
+    display: grid;
     width: 260px;
     height: 100px;
-    background-color: blueviolet;
+    background-color: rgb(213, 193, 233);
+    grid-template-columns: repeat(2, 1fr);        
+    border: none;
+    outline: none;
+    overflow: hidden;
+}
+
+#header_main .info_item {   
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    padding: 0;  
+  
+}
+
+#header_main .info_icon {
+    font-size: 20px;
+    color:#007bff
+    flex-shrink: 0;
+}
+
+
+
+
+#header_main .info .info_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+#header_main .info .info_text .title {
+    font-size: 10px;
+    
+}
+
+#header_main .info .info_text .sub {
+    font-size: 10px;
+
 }
 
 #header_botton {
@@ -170,7 +228,7 @@ header {
 #header_botton nav {
     width: 800px;
     height: 50px;
-    background-color: pink;
+    background-color: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -181,10 +239,14 @@ header {
     padding: 0 50px;
     font-size: 14px;
     font-weight: bold;
-    
-    
+       
     
       
+}
+
+#header_botton nav a.highlight {
+    color: red;
+
 }
 
 
@@ -210,14 +272,15 @@ header {
     display: flex;
     gap: 30px;
     justify-content: space-between;
+    
 }
 
 .board-box {
     flex: 1;
     background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
-    border: 1px solid #eee;
+    box-shadow: none;
+    border: none;
 }
 
 .border-title {
@@ -233,6 +296,7 @@ header {
     font-size: 1.25rem;
     color: #333;
     font-weight: 600;
+    
 }
 
 .more-btn {

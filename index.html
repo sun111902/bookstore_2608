@@ -8,6 +8,7 @@
 
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@14.0.1/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v7.0.0/css/all.css">
 
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/common.css">
@@ -49,22 +50,71 @@
                         <option>ISBN</option>
                     </select>
                     <input class="search-bar__input" type="text">
-                    <button class="search-bar__btn" type="button"></button>
+                    <button class="search-bar__btn" type="button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
 
                 </div>
 
-                <div class="info"></div>
+                <div class="info">
+                    <div class="info-item">
+                        <i class="fa-solid fa-user"></i>
+                        <div class="info_text">
+                            <span class="title">회원 수</span>
+                            <span class="sub">1,192,829명</span>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fa-solid fa-book"></i>
+                        <div class="info_text">
+                            <span class="title">전체 등록된 책</span>
+                            <span class="sub">22,296,120권</span>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fa-regular fa-user"></i>                        
+                        <div class="info_text">
+                            <span class="title">판매점 수</span>
+                            <span class="sub">77,557점</span>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fa-solid fa-book-tanakh"></i>
+                        <div class="info_text">
+                            <span class="title">어제 등록된 책</span>
+                            <span class="sub">3,354권</span>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
 
             </div>
         </div>
         <div id="header_botton">
             <div class="container">
                 <nav>
+
                     <li><a href="#">분야찾기</a></li>
-                    <li><a href="#">가격대별코너</a></li>
+
+                    <li><a href="#" class="highlight">가격대별코너</a></li>
                     <li><a href="#">이벤트</a></li>
-                    <li><a href="#">인증서점</a></li>
+
+                    <li>
+                        <a href="#" class="certified-link">
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span>인증서점</span>
+                        </a>
+                    </li>
+
                     <li><a href="#">나의서점</a></li>
+
+
                 </nav>
                 <div class="realtime"></div>
             </div>
@@ -255,14 +305,14 @@
             <div class="card two-col__side">
                 <div class="section-header">
                     <h2 class="section-title">인증서점</h2>
-                    <div class="flex" style="align-items:center; gap:10px;">
-                        <div class="tab-list">
-                            <button class="tab-btn is-active">아주서점</button>
-                            <button class="tab-btn">신규 서점</button>
-                        </div>
-                        <a href="#" class="link-more">더보기</a>
-                    </div>
+
+                    <!-- <div class="tab-list">
+                        <button class="tab-btn is-active">이주의 서점</button>
+                        <button class="tab-btn">신규 서점</button>
+                    </div> -->
+                    <a href="#" class="link-more">더보기</a>
                 </div>
+
 
 
 
@@ -316,10 +366,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="store-dots">
+                <!-- <div class="store-dots">
                     <span class="store-dot is-active"></span>
                     <span class="store-dot"></span>
-                </div>
+                </div> -->
             </div><!-- /인증서점 -->
 
             <script>

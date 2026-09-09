@@ -26,8 +26,8 @@
 #new
 {
     width: 100%;
-    height: 400px;
-    background-color: #eee;
+    height: 425px;
+    background-color: white;
 }
 #new .container {
     flex-wrap: wrap;
@@ -97,7 +97,7 @@
 #price{
     width: 100%;
     height: 950px;
-    background-color: antiquewhite;
+    background-color: white;
 }
 
 #price .container{
@@ -128,7 +128,7 @@
 }
 
 #price h2{
-    width: 20%;  
+    width: 50%;  
 
     
 }
@@ -149,7 +149,7 @@
 #price .books{
     width: 100%;
     height: 81%;
-    background-color: beige;
+    background-color: white;
     position: relative;
       
     
@@ -173,7 +173,7 @@
 #price .book {
     width: 21%;
     height: 90px;
-    background-color: pink;
+    background-color: white;
     font-size: 10px;
 }
 #price .book img{width: 90%;
@@ -193,6 +193,7 @@
     
   
 }
+
 
 
 
@@ -227,7 +228,7 @@
  width: 40px;
  height: 40px;
  border-radius: var(--radius-md);
- background: #dbeafe;
+ background: #ccc;
  display: flex;
  align-items: center;
  justify-content: center;
@@ -295,6 +296,20 @@ section {
     justify-content: space-between;
     align-content: space-evenly;
 }
+
+.section-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.tab-list {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
 
 .content {
     width: 340px;
