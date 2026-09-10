@@ -509,10 +509,12 @@ footer {width: 100%;
        
     }
 footer > #box {width: 1240px; height: 130px; margin: 10px auto;}
-footer > #box > ul {width: 750px; height: 50px; float: left; margin: 20px 0 0 40px; color:white;}
-footer > #box > ul > li {float: left; font-size: 12px; margin: 5px 10px;}
+footer > #box > ul {width: 750px; height: 50px; float: left; margin: 10px 0 0 30px; color:white;}
+footer > #box > ul > li {float: left;
+                         font-size: 15px;                         
+                         margin: 5px 10px;}
 footer > #box > ul > li a {text-decoration: none; color: white;}
-footer > #box > p {float: left; width: 700px; height: 50px; line-height: 150%; margin: 10px 0 0 40px; font-size: 12px; color: white;}
+footer > #box > p {float: left; width: 700px; height: 50px; line-height: 150%; margin: 10px 0 0 40px; font-size: 12px; color: #a9a9a9;}
     
 
 
